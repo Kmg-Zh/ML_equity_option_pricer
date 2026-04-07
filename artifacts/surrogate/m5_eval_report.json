@@ -1,0 +1,87 @@
+{
+  "model": "AmericanPriceMLP",
+  "training_mode": "M5 stratified + weighted loss",
+  "teacher": "Binomial-CRR (120 steps)",
+  "train_samples": 900,
+  "eval_samples": 300,
+  "final_train_weighted_mse": 0.0013880478988044988,
+  "final_val_weighted_mse": 0.002096746570082582,
+  "weights": {
+    "short_maturity_weight": 2.5,
+    "wing_moneyness_weight": 2.0
+  },
+  "bucket_eval": [
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "long",
+      "count": 14,
+      "mae": 0.47677988135985844,
+      "rmse": 0.5622429826275588,
+      "max_ae": 1.0141286449391407
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "medium",
+      "count": 6,
+      "mae": 0.7593912717269197,
+      "rmse": 0.8232763435855256,
+      "max_ae": 1.306450985552658
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "short",
+      "count": 1,
+      "mae": 0.8606732154614685,
+      "rmse": 0.8606732154614685,
+      "max_ae": 0.8606732154614685
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "long",
+      "count": 95,
+      "mae": 0.5232377866536986,
+      "rmse": 0.6341585236604331,
+      "max_ae": 1.7650531837081882
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "medium",
+      "count": 33,
+      "mae": 0.5287737759524723,
+      "rmse": 0.6933886234277488,
+      "max_ae": 2.0889652974539867
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "short",
+      "count": 3,
+      "mae": 0.7351575780438676,
+      "rmse": 0.9500383766531473,
+      "max_ae": 1.585367573156518
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "long",
+      "count": 96,
+      "mae": 0.5351715842253225,
+      "rmse": 0.7327934922003669,
+      "max_ae": 2.7287886354913624
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "medium",
+      "count": 38,
+      "mae": 0.47916408361166757,
+      "rmse": 0.6260394244774947,
+      "max_ae": 1.8957679299519654
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "short",
+      "count": 14,
+      "mae": 0.6022381857172572,
+      "rmse": 0.7798170375893231,
+      "max_ae": 1.9260107106425508
+    }
+  ]
+}

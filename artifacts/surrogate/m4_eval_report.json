@@ -1,0 +1,83 @@
+{
+  "model": "AmericanPriceMLP",
+  "architecture": "5\u219264\u2192128\u219264\u21921 (ReLU, Adam, L2=1e-5)",
+  "teacher": "Binomial-CRR (120 steps)",
+  "train_samples": 800,
+  "eval_samples": 200,
+  "final_train_mse": 0.0006873783939778703,
+  "final_val_mse": 0.002565432824481555,
+  "bucket_eval": [
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "long",
+      "count": 8,
+      "mae": 0.5221983781668921,
+      "rmse": 0.6367615459873655,
+      "max_ae": 1.135474332794189
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "medium",
+      "count": 6,
+      "mae": 0.8864109757268199,
+      "rmse": 0.9457446631501942,
+      "max_ae": 1.300631301277635
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "short",
+      "count": 1,
+      "mae": 0.5201060334080276,
+      "rmse": 0.5201060334080276,
+      "max_ae": 0.5201060334080276
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "long",
+      "count": 53,
+      "mae": 0.39260880923133784,
+      "rmse": 0.5051900370166847,
+      "max_ae": 1.1634919193113067
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "medium",
+      "count": 25,
+      "mae": 0.5313725714132073,
+      "rmse": 0.6903146890534627,
+      "max_ae": 1.4791230448212564
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "short",
+      "count": 1,
+      "mae": 0.72214848864796,
+      "rmse": 0.72214848864796,
+      "max_ae": 0.72214848864796
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "long",
+      "count": 76,
+      "mae": 0.4843488728457175,
+      "rmse": 0.6237234127181485,
+      "max_ae": 1.7683123068661324
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "medium",
+      "count": 25,
+      "mae": 0.5064873502832127,
+      "rmse": 0.6899437448580537,
+      "max_ae": 1.8131565050185827
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "short",
+      "count": 5,
+      "mae": 1.0712672800284124,
+      "rmse": 1.186969573498107,
+      "max_ae": 1.5063634629850426
+    }
+  ]
+}

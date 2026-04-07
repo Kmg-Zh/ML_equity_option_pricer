@@ -1,0 +1,100 @@
+{
+  "model": "AmericanPriceMLP",
+  "training_mode": "M6 robust + financial constraints",
+  "teacher": "Binomial-CRR (120 steps)",
+  "train_samples": 1000,
+  "eval_samples": 320,
+  "config": {
+    "use_bucket_weighting": true,
+    "short_maturity_weight": 2.5,
+    "wing_moneyness_weight": 2.0,
+    "use_financial_constraints": true,
+    "monotonicity_penalty_lambda": 0.2,
+    "convexity_penalty_lambda": 0.15,
+    "constraint_eps_lm": 0.02
+  },
+  "final_train_objective": 0.0033898860738882,
+  "final_val_mse": 0.0031791523947895892,
+  "final_mono_penalty": 8.863819331597013e-07,
+  "final_convex_penalty": 7.038102197099359e-06,
+  "constraint_metrics": {
+    "monotonicity_violation_rate": 0.009375,
+    "monotonicity_violation_mean": 5.983697748554867e-05,
+    "convexity_violation_rate": 0.35625,
+    "convexity_violation_mean": 0.0008697026583004995
+  },
+  "bucket_eval": [
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "long",
+      "count": 12,
+      "mae": 0.8897247588743333,
+      "rmse": 1.1578200524572178,
+      "max_ae": 2.9289886047678024
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "medium",
+      "count": 7,
+      "mae": 0.8398596959527845,
+      "rmse": 0.9194864581316134,
+      "max_ae": 1.3980436162954888
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "short",
+      "count": 6,
+      "mae": 0.39467671495325013,
+      "rmse": 0.45573744436567576,
+      "max_ae": 0.8229845601028849
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "long",
+      "count": 98,
+      "mae": 0.5348906186184608,
+      "rmse": 0.6642440630945358,
+      "max_ae": 1.784546767172913
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "medium",
+      "count": 39,
+      "mae": 0.5863343049643153,
+      "rmse": 0.7374578502579385,
+      "max_ae": 1.8402163257147652
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "short",
+      "count": 18,
+      "mae": 0.37773022357601505,
+      "rmse": 0.47660898238285043,
+      "max_ae": 1.0773224758136508
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "long",
+      "count": 98,
+      "mae": 0.6536368549181732,
+      "rmse": 0.8045455344385639,
+      "max_ae": 2.0704003841775815
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "medium",
+      "count": 34,
+      "mae": 0.6035992699911576,
+      "rmse": 0.8139842327586589,
+      "max_ae": 1.9478682273374126
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "short",
+      "count": 8,
+      "mae": 0.7553150673980693,
+      "rmse": 0.8911161217690097,
+      "max_ae": 1.5626582974363572
+    }
+  ]
+}

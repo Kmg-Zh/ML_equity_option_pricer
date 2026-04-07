@@ -1,0 +1,105 @@
+{
+  "case_count": 36,
+  "row_count": 36,
+  "bucket_summary": [
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "long",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.21703652152546082,
+      "mean_abs_fdm_vs_binomial": 0.010989042096856139,
+      "mean_abs_fdm_vs_lsm": 0.20604747942860469,
+      "mean_binomial_us": 12292.8,
+      "mean_lsm_us": 145053.025,
+      "mean_fdm_us": 42891.775
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "medium",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.11062864236193182,
+      "mean_abs_fdm_vs_binomial": 0.009240795506814559,
+      "mean_abs_fdm_vs_lsm": 0.10585781778434744,
+      "mean_binomial_us": 12424.8,
+      "mean_lsm_us": 131902.775,
+      "mean_fdm_us": 43538.9
+    },
+    {
+      "moneyness_bucket": "ATM",
+      "maturity_bucket": "short",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.016662065948703564,
+      "mean_abs_fdm_vs_binomial": 0.016357558502024805,
+      "mean_abs_fdm_vs_lsm": 0.024176894146650252,
+      "mean_binomial_us": 12108.075,
+      "mean_lsm_us": 109364.725,
+      "mean_fdm_us": 40255.825
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "long",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.17765917293111544,
+      "mean_abs_fdm_vs_binomial": 0.033828720266392054,
+      "mean_abs_fdm_vs_lsm": 0.15477271024548678,
+      "mean_binomial_us": 14884.875,
+      "mean_lsm_us": 152146.375,
+      "mean_fdm_us": 53399.125
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "medium",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.05737044706774963,
+      "mean_abs_fdm_vs_binomial": 0.010340630382157268,
+      "mean_abs_fdm_vs_lsm": 0.06007629398453129,
+      "mean_binomial_us": 12483.475,
+      "mean_lsm_us": 119331.475,
+      "mean_fdm_us": 47916.925
+    },
+    {
+      "moneyness_bucket": "ITM",
+      "maturity_bucket": "short",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.08162882096026536,
+      "mean_abs_fdm_vs_binomial": 0.003086794632402523,
+      "mean_abs_fdm_vs_lsm": 0.08138692701911693,
+      "mean_binomial_us": 13839.325,
+      "mean_lsm_us": 116335.725,
+      "mean_fdm_us": 43600.175
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "long",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.42963332551040834,
+      "mean_abs_fdm_vs_binomial": 0.040357656549474985,
+      "mean_abs_fdm_vs_lsm": 0.38927566896093335,
+      "mean_binomial_us": 17103.075,
+      "mean_lsm_us": 142348.3,
+      "mean_fdm_us": 42553.775
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "medium",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.29697370073895657,
+      "mean_abs_fdm_vs_binomial": 0.020889759217181503,
+      "mean_abs_fdm_vs_lsm": 0.27608394152177507,
+      "mean_binomial_us": 12468.275,
+      "mean_lsm_us": 127110.95000000001,
+      "mean_fdm_us": 43650.1
+    },
+    {
+      "moneyness_bucket": "OTM",
+      "maturity_bucket": "short",
+      "count": 4,
+      "mean_abs_lsm_vs_binomial": 0.2720616773220854,
+      "mean_abs_fdm_vs_binomial": 0.015742190256538002,
+      "mean_abs_fdm_vs_lsm": 0.2563194870655474,
+      "mean_binomial_us": 12123.55,
+      "mean_lsm_us": 111902.6,
+      "mean_fdm_us": 36801.325
+    }
+  ]
+}
