@@ -1,0 +1,129 @@
+{
+  "module": "M10",
+  "description": "Stress tests: surrogate robustness under extreme market conditions",
+  "source_model": "m6",
+  "n_base_samples": 90,
+  "intrinsic_tolerance": 0.5,
+  "delta_validity_window": [
+    -1.05,
+    0.05
+  ],
+  "scenarios": {
+    "base": {
+      "n": 90,
+      "price": {
+        "non_negative_pct": 95.55555555555556,
+        "above_intrinsic_pct": 97.77777777777777,
+        "mean": 13.322574317966337,
+        "p5": 0.14791643709514607,
+        "p95": 35.82341595709576,
+        "min": -0.6766923268584496
+      },
+      "delta": {
+        "sign_pass_pct": 98.88888888888889,
+        "mean": -0.4486015521557275,
+        "p5": -0.9002664944593877,
+        "p95": -0.04603604905553768
+      }
+    },
+    "spot_jump_up_30pct": {
+      "n": 90,
+      "price": {
+        "non_negative_pct": 78.88888888888889,
+        "above_intrinsic_pct": 85.55555555555556,
+        "mean": 5.554224209139394,
+        "p5": -1.8285739941887327,
+        "p95": 24.11893667918044,
+        "min": -2.846985446180489
+      },
+      "delta": {
+        "sign_pass_pct": 100.0,
+        "mean": -0.19386732865282902,
+        "p5": -0.7496506530725536,
+        "p95": -0.002606723632968374
+      }
+    },
+    "spot_jump_down_30pct": {
+      "n": 90,
+      "price": {
+        "non_negative_pct": 100.0,
+        "above_intrinsic_pct": 85.55555555555556,
+        "mean": 30.94689843441309,
+        "p5": 3.245380375474417,
+        "p95": 53.41585692245037,
+        "min": 0.5071567921129505
+      },
+      "delta": {
+        "sign_pass_pct": 84.44444444444444,
+        "mean": -0.8026128125062044,
+        "p5": -1.1172240280285404,
+        "p95": -0.18666303794507277
+      }
+    },
+    "vol_spike_80pct": {
+      "n": 90,
+      "price": {
+        "non_negative_pct": 100.0,
+        "above_intrinsic_pct": 100.0,
+        "mean": 26.178555259570036,
+        "p5": 5.738879230224865,
+        "p95": 47.09838516672861,
+        "min": 3.1127284654017817
+      },
+      "delta": {
+        "sign_pass_pct": 100.0,
+        "mean": -0.3937851274296907,
+        "p5": -0.7251478166251827,
+        "p95": -0.11543970635302946
+      }
+    },
+    "near_expiry": {
+      "n": 90,
+      "price": {
+        "non_negative_pct": 74.44444444444444,
+        "above_intrinsic_pct": 62.22222222222222,
+        "mean": 8.823033974175504,
+        "p5": -1.3735520095565181,
+        "p95": 32.05094475079069,
+        "min": -1.7747370584024784
+      },
+      "delta": {
+        "sign_pass_pct": 94.44444444444444,
+        "mean": -0.4864902063279755,
+        "p5": -1.0413429577978213,
+        "p95": 0.0027533961508255773
+      }
+    },
+    "extreme_long_maturity": {
+      "n": 90,
+      "price": {
+        "non_negative_pct": 97.77777777777777,
+        "above_intrinsic_pct": 96.66666666666667,
+        "mean": 23.237959398086893,
+        "p5": 3.6816401472181286,
+        "p95": 43.80498944617039,
+        "min": -1.8034304514539716
+      },
+      "delta": {
+        "sign_pass_pct": 98.88888888888889,
+        "mean": -0.3891159810781841,
+        "p5": -0.7391458785230328,
+        "p95": -0.13125830473467917
+      }
+    }
+  },
+  "monotonicity_base": {
+    "n": 90,
+    "spot_monotonicity_pass_pct": 98.88888888888889,
+    "vol_monotonicity_pass_pct": 88.88888888888889,
+    "spot_mono_violations": 1,
+    "vol_mono_violations": 10
+  },
+  "monotonicity_vol_spike": {
+    "n": 90,
+    "spot_monotonicity_pass_pct": 100.0,
+    "vol_monotonicity_pass_pct": 100.0,
+    "spot_mono_violations": 0,
+    "vol_mono_violations": 0
+  }
+}
